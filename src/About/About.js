@@ -53,7 +53,7 @@ const About = () => {
             <p className="text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Blanditiis reiciendis minima nobis est quas voluptatibus
-              accusantium temporibus exercitationem cumque voluptate.
+              accusantium temporibus exercitationem cumque.
             </p>
           </div>
         </div>
