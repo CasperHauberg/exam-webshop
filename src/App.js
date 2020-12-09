@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Components/Navbar/Navbar"
 import Card from "./Card/Card";
 
 import "jquery";
@@ -26,7 +27,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App bg-light">
+    <div className="App bg-light">
+    <Navbar/>
         <div className="container">
           <div className="row">
             <Card title="Sloth Codes" />

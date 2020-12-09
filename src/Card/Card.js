@@ -13,7 +13,7 @@ function Card(props) {
             dolorem repudiandae consequuntur aut. Error debitis consectetur
             voluptas ex iste ipsam!
           </div>
-          <a href="" className="btn btn-block btn-primary">
+          <a href="#" className="btn btn-block btn-primary">
             Add to Cart
           </a>
         </div>
