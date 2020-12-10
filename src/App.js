@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar"
-import Card from "./Card/Card";
+
 import "jquery";
 import "popper.js";
 import "bootstrap";
 import firebase from "./firebase";
 
 import Card from "./Card/Card";
+import Navbar from "./Components/Navbar/Navbar";
 import Landing from "./Landing/Landing";
 import About from "./About/About";
 import Footer from "./Footer/Footer";
@@ -31,12 +31,8 @@ class App extends React.Component {
 
   render() {
     return (
-
-    <div className="App bg-light">
-    <Navbar/>
-        <div className="container">
-
       <div className="App bg-light">
+        <Navbar />
         <Landing getData={this.getData} />
         <div className="container mb-5">
           <h1 className="text-center mb-3">Our newest products</h1>
