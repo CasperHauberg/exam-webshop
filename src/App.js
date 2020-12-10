@@ -11,6 +11,11 @@ import Landing from "./Landing/Landing";
 import About from "./About/About";
 import Footer from "./Footer/Footer";
 
+import placeholder from "./img/placeholder.jpg";
+import keychain from "./img/sloth-keychain.jpg";
+import machine from "./img/sloth-machine.jpg";
+import codes from "./img/sloth-codes.jpg";
+
 class App extends React.Component {
   getData() {
     var database = firebase.database().ref("/Keys"); // Reference to database path - "/Keys" are the path
@@ -38,10 +43,10 @@ class App extends React.Component {
           <h1 className="text-center mb-3">Our newest products</h1>
 
           <div className="row">
-            <Card title="Sloth Codes" />
-            <Card title="Sloth Machines" />
-            <Card title="Sloth Figures" />
-            <Card title="Sloth Keychains" />
+            <Card title="Sloth Codes" img={codes} />
+            <Card title="Sloth Machines" img={machine} />
+            <Card title="Sloth Figures" img={placeholder} />
+            <Card title="Sloth Keychains" img={keychain} />
           </div>
         </div>
         <About />
