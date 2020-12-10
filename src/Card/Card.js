@@ -8,7 +8,7 @@ function Card(props) {
         <img src={placeholder} className="card-img-top mb-2" alt="#" />
         <div className="card-body">
           <h5 className="card-title mb-2">{props.title}</h5>
-          <div className="card-text mb-3">
+          <div className="card-text mb-3 text-secondary">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
             dolorem repudiandae consequuntur aut. Error debitis consectetur
             voluptas ex iste ipsam!
