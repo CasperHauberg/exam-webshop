@@ -1,12 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAppleAlt,
-  faDice,
-  faLeaf,
-  faCouch,
-  faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDice, faLeaf, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import founders from "./founders.jpg";
 
 const About = () => {
@@ -40,7 +34,6 @@ const About = () => {
                   icon={faDice}
                   size="lg"
                   color="#007BFF"
-                  className="mb-2"
                 />
                 <h3 className="text-primary text-center">Exciting</h3>
                 <p className="text-secondary">

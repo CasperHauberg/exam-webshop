@@ -1,6 +1,7 @@
 {
   "name": "webshop",
   "version": "0.1.0",
+  "homepage": "http://www.casperhauberg.com/react",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

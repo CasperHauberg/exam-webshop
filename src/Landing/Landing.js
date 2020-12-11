@@ -7,9 +7,16 @@ function Landing(props) {
       <div className={classes.overlay}>
         <h1 className="display-2 text-center">Sloths X Makerspace</h1>
         <div>
-          <button onClick={props.getData} className="btn btn-primary mr-1">
+          <button
+            type="button"
+            onClick={props.getData}
+            className="btn btn-primary mr-1"
+            data-toggle="modal"
+            data-target="#staticBackdrop"
+          >
             Get Sloth Code
           </button>
+
           <button className="btn btn-primary ml-2">About Sloths</button>
         </div>
       </div>

@@ -17,7 +17,12 @@ import machine from "./img/sloth-machine.jpg";
 import codes from "./img/sloth-codes.jpg";
 
 class App extends React.Component {
-  getData() {
+  constructor(props) {
+    super(props);
+    this.state = null;
+  }
+
+  getData = () => {
     var database = firebase.database().ref("/Keys"); // Reference to database path - "/Keys" are the path
 
     let storedKey;
@@ -26,13 +31,11 @@ class App extends React.Component {
       const keys = snapshot.val(); // Snapshot.val() is the actual data
       console.log(keys);
       storedKey = Object.keys(keys)[Object.keys(keys).length - 1]; // Turns object keys into an array and returns the last key in the array
-      // console.log(storedKey); // returns string;
+      console.log(storedKey); // returns string;
       database = firebase.database().ref("/inputcode1/SlothCode"); // Change the database refence to active key
       database.set(storedKey); // Sets the storedKey to the new path.
-
-      // Todo #1: Extract value of the keys
     });
-  }
+  };
 
   render() {
     return (
@@ -51,6 +54,35 @@ class App extends React.Component {
         </div>
         <About />
         <Footer />
+
+        <div
+          className="modal fade"
+          id="staticBackdrop"
+          data-backdrop="static"
+          data-keyboard="false"
+          tabIndex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="staticBackdropLabel">
+                  Your Sloth Code
+                </h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">xxx</div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
