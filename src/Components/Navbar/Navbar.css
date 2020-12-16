@@ -1,19 +1,17 @@
-
 .NavbarItems {
-  background: black;
+  background: white;
   height: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.7rem;
-
 }
 
 .Navbar-logo {
-  color: white;
+  color: black;
   justify-self: start;
   margin-left: 20px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .fa-react {
@@ -23,9 +21,9 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
-  list-style:none;
+  list-style: none;
   text-align: center;
   width: 70vw;
   justify-content: end;
@@ -33,34 +31,32 @@
 }
 
 .nav-links {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-  background-color: Blue;
+  text-decoration: none;
+  background-color: #007bff;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: black;
 }
 
 .nav-links-mobile {
   display: none;
-
 }
 
 .Menu-icon {
   display: none;
 }
 
-
-@media screen and (max-width :960px) {
-
-  .NavbarItems{
+@media screen and (max-width: 960px) {
+  .NavbarItems {
     position: relative;
   }
   .nav-menu {
@@ -76,7 +72,7 @@
   }
 
   .nav-menu.active {
-    background :black;
+    background: white;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -87,10 +83,9 @@
     text-align: center;
     padding: 1rem;
     width: 100;
-
   }
 
-  .nav-links:hover{
+  .nav-links:hover {
     background-color: pink;
     border-radius: 0;
   }
@@ -111,9 +106,8 @@
     cursor: pointer;
   }
 
-  .fa-times{
-    color: #fff;
+  .fa-times {
+    color: black;
     font-size: 2rem;
   }
-
 }

@@ -2,10 +2,11 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="col-md-3">
+    <div className="col-md-3 mb-5">
       <div className="card rounded shadow">
         <img
           src={props.img}
+          loading="lazy"
           className="card-img-top mb-2"
           style={{
             height: "250px",
