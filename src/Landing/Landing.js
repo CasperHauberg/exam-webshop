@@ -5,7 +5,7 @@ function Landing(props) {
   return (
     <section className={classes.bg}>
       <div className={classes.overlay}>
-        <h1 className="display-2 text-center">Sloths X Makerspace</h1>
+        <h1 className="display-2 text-center mb-3">Try your luck today?</h1>
         <div>
           <button
             type="button"
@@ -14,10 +14,8 @@ function Landing(props) {
             data-toggle="modal"
             data-target="#staticBackdrop"
           >
-            Get Sloth Code
+            Get a Slothmachine Code
           </button>
-
-          <button className="btn btn-primary ml-2">About Sloths</button>
         </div>
       </div>
     </section>

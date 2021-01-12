@@ -22,9 +22,13 @@ function Card(props) {
             dolorem repudiandae consequuntur aut. Error debitis consectetur
             voluptas ex iste ipsam!
           </div>
-          <a href="#" className="btn btn-block btn-primary">
+          <button
+            href="#"
+            className="btn btn-block btn-primary"
+            onClick={props.add}
+          >
             Add to Cart
-          </a>
+          </button>
         </div>
       </div>
     </div>

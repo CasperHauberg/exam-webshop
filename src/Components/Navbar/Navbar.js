@@ -11,9 +11,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems fixed-top shadow-lg">
-        <h1 className="Navbar-logo">
-          Sloth <i className="fas fa-tree"></i>{" "}
-        </h1>
+        <h2 className="Navbar-logo">
+          <i className="fas fa-tree"></i> Sloths X Makerspace
+        </h2>
         <div className="Menu-icon" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : " fas fa-bars"}
